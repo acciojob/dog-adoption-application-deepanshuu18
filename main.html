@@ -11,6 +11,52 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-</body>
+<body>
+    <div class="form-container">
+        <h1>Dog Adoption Application</h1>
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
 
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+
+            <!-- Checkbox for Living with a Dog -->
+            <div class="form-group">
+                <label for="dog-living">Have you ever lived with a Dog before?</label>
+                <input type="checkbox" id="dog-living" name="dog-living" value="Yes">
+                <label for="dog-living">Yes</label>
+            </div>
+
+            <!-- Preferred Breeds Multi-select -->
+            <div class="form-group">
+                <label for="breeds">Please select your preferred breeds:</label>
+                <select id="breeds" name="breeds" multiple required>
+                    <option value="Labrador">Labrador</option>
+                    <option value="Golden Retriever">Golden Retriever</option>
+                    <option value="Bulldog">Bulldog</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="Poodle">Poodle</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
 </html>
